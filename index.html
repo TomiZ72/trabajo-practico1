@@ -10,15 +10,86 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section id="card">
-    <header>
-        <div class="header">
-        <img src="/img/logo.png.png" alt="imagen del logo">
-        <button type="button">
-            <img src="/img/light-mode.png" alt="switch light mode"></button>
-        </div>    
-        </header>
-    <h1>hola</h1>
+    <section id="main">
+        <header class="bar">
+            <div class="logo">
+                <img src="/img/logo.png.png" alt="imagen del logo">
+                <h3>Character Counter</h3>
+            </div>
+            <button class="switch">☀</button>
+            <div class="title">
+                <h2>Analyze your text in real-time</h2>   
+            </div>
+            </header>
+        <div class="text">
+            <textarea placeholder="Start tipying here..."></textarea>
+        </div>
+        <div class="inputs">
+            <label>
+                <input type="checkbox">
+                Exclude Spaces
+            </label>
+            <label>
+                <input type="checkbox">
+                Set character limits
+            </label>
+        </div>
+        <h4>Approx. reading time: 1 minute</h4>
+    <section class="cards">
+        <div class="card1">
+            <h2>278</h2>
+            <p>Total Characters</p>
+
+        </div>
+         <div class="card2">
+            <h2>39</h2>
+            <p>Word Count</p>
+
+        </div> 
+        <div class="card3">
+            <h2>04</h2>
+            <p>Sentence Count</p>
+        </div>
     </section>
+    <section class="progress-bar">
+        <h3>Letter Density</h3>
+        <div class="progress-e">
+            <h4><span>E</span></h4>
+            <label for="letter-e"></label>
+            <progress id="letter-e" max="50" value="16.06"></progress>
+            <h4>40(16.06%)</h4>
+        </div>
+        <div class="progress-i">
+            <h4><span>I</span></h4>
+            <label for="letter-i"></label>
+            <progress id="letter-i" max="50" value="11.65"></progress>
+            <h4>29 (11.65%)</h4>
+        </div>
+        <div class="progress-t">
+            <h4><span>T</span></h4>
+            <label for="letter-t"></label>
+            <progress id="letter-t" max="50" value="11.24"></progress>
+            <h4>28(11.24%)</h4>
+        </div>
+        <div class="progress-o">
+            <h4><span>O</span></h4>
+            <label for="letter-o"></label>
+            <progress id="letter-o" max="50" value="8.84"></progress>
+            <h4>22(8.84%)</h4>
+        </div>
+        <div class="progress-">
+            <h4><span>N</span></h4>
+            <label for="letter-n"></label>
+            <progress id="letter-e" max="50" value="8.43"></progress>
+            <h4>21(8.43%)</h4>
+        </div>
+        
+    </section>
+    </section>
+    <div class="see-more">
+        <h4>See More</h4>
+        <button>▼</button>
+    </div>
+    
 </body>
 </html>
