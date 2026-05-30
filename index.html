@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Counter</title>
+    <link rel="icon" href="/assets/img/logo.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/d060ea514a.js" crossorigin="anonymous"></script>
+
 <body>
     <section id="main">
         <header>
@@ -30,16 +33,14 @@ A great design transforms complex ideas into elegant solutions, making them easy
 It blends aesthetics and functionality seamlessly.</textarea>
             <div class="inputs">
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" class="inp-1">
                     Exclude Spaces
                 </label>
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" class="inp-2">
                     Set character limits
                 </label>
-                <div class="inpt-right">
-                    <h4>Approx. reading time: 1 minute</h4>
-                </div>
+                <p>Approx. reading time:1 minute</p>
             </div>
             <section class="cards">
         <div class="card1">
@@ -92,7 +93,8 @@ It blends aesthetics and functionality seamlessly.</textarea>
     </section>
      <div class="see-more">
         <h4>See More</h4>
-        <button>▼</button>
+        <button class="btn-more"><i class="fa-solid fa-angle-down"></i>
+        </button>
     </div>
     </section>
 </body>
