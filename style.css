@@ -15,13 +15,54 @@
 }
 
 body{
-    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color1);
+    align-items: center;
+}
+.main{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color1);
+    width: 100%;
+    height: 100vh;
+}
+.nav-bar{
+    height: 50px;
+    display: flex;
+    background-color: #12131a;
+    width: 100%;
+    color: var(--text-color2);
+    padding: 30px 50px 30px 20px;
+}
+.switch-btn{
+    align-items: end;
+}
+.title{
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+.text-area{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding-bottom: 30px;
+    margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--background-cards);
+    font-family: inherit;
+      
 }
 
-#card{
-    background-color: var(--background-color1);
-    width: 700px;
-    height: 100vh;
-    margin: 30px 30px 
-}
+
+
+
 

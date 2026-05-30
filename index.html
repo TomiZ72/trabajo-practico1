@@ -11,31 +11,32 @@
 </head>
 <body>
     <section id="main">
-        <header class="bar">
-            <div class="logo">
-                <img src="/img/logo.png.png" alt="imagen del logo">
-                <h3>Character Counter</h3>
-            </div>
-            <button class="switch">☀</button>
+        <header class="start">
+            <div class="nav-bar">
+                    <img src="/assets/img/logo.png" alt="imagen del logo">
+                    <h3>Character Counter</h3>
+                    <button class="switch-btn">☀</button>
+           </div>
+        </header> 
             <div class="title">
-                <h2>Analyze your text in real-time</h2>   
+               
+                <h2>Analyze your text <br> in real-time</h2>   
             </div>
-            </header>
-        <div class="text">
-            <textarea placeholder="Start tipying here..."></textarea>
-        </div>
-        <div class="inputs">
-            <label>
-                <input type="checkbox">
-                Exclude Spaces
-            </label>
-            <label>
-                <input type="checkbox">
-                Set character limits
-            </label>
-        </div>
-        <h4>Approx. reading time: 1 minute</h4>
-    <section class="cards">
+        
+        <textarea class="text-area" placeholder="Start tipying here..."></textarea>
+            
+            <div class="inputs">
+                <label>
+                    <input type="checkbox">
+                    Exclude Spaces
+                </label>
+                <label>
+                    <input type="checkbox">
+                    Set character limits
+                </label>
+            </div>
+            <h4>Approx. reading time: 1 minute</h4>
+        <section class="cards">
         <div class="card1">
             <h2>278</h2>
             <p>Total Characters</p>
@@ -51,7 +52,7 @@
             <p>Sentence Count</p>
         </div>
     </section>
-    <section class="progress-bar">
+    <article class="progress-bar">
         <h3>Letter Density</h3>
         <div class="progress-e">
             <h4><span>E</span></h4>
@@ -77,19 +78,18 @@
             <progress id="letter-o" max="50" value="8.84"></progress>
             <h4>22(8.84%)</h4>
         </div>
-        <div class="progress-">
+        <div class="progress-n">
             <h4><span>N</span></h4>
             <label for="letter-n"></label>
             <progress id="letter-e" max="50" value="8.43"></progress>
             <h4>21(8.43%)</h4>
         </div>
         
-    </section>
-    </section>
-    <div class="see-more">
+    </article>
+     <div class="see-more">
         <h4>See More</h4>
         <button>▼</button>
     </div>
-    
+    </section>
 </body>
 </html>
