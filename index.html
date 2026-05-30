@@ -10,20 +10,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 <body>
     <section id="main">
-        <header class="start">
-            <div class="nav-bar">
-                    <img src="/assets/img/logo.png" alt="imagen del logo">
+        <header>
+            <nav>
+                <div class="nav-bar">
+                    <img src="/assets/img/logo.png" alt="imagen del logo" class="logo">
                     <h3>Character Counter</h3>
-                    <button class="switch-btn">☀</button>
-           </div>
+                </div>
+                <button class="switch">☀</button>
+            </nav>    
         </header> 
             <div class="title">
                
-                <h2>Analyze your text <br> in real-time</h2>   
+                <h2>Analyze your text <br> in real-time.</h2>   
             </div>
         
-        <textarea class="text-area" placeholder="Start tipying here..."></textarea>
-            
+        <textarea class="text-area" placeholder="Start tipying here...">“Design is the silent ambassador of your brand.
+Simplicity is key to effective communication, creating clarity in every interaction.
+A great design transforms complex ideas into elegant solutions, making them easy to understand.
+It blends aesthetics and functionality seamlessly.</textarea>
             <div class="inputs">
                 <label>
                     <input type="checkbox">
@@ -33,10 +37,11 @@
                     <input type="checkbox">
                     Set character limits
                 </label>
-                <h4>Approx. reading time: 1 minute</h4>
+                <div class="inpt-right">
+                    <h4>Approx. reading time: 1 minute</h4>
+                </div>
             </div>
-            
-        <section class="cards">
+            <section class="cards">
         <div class="card1">
             <h2>278</h2>
             <p class="txt-card1">Total Characters</p>
@@ -56,31 +61,31 @@
         <div class="letter-e">
             <h4><span>E</span></h4>
             <label for="letter-e"></label>
-            <progress class="progress-e" max="50" value="16.06"></progress>
+            <progress max="50" value="16.06"></progress>
             <h4>40(16.06%)</h4>
         </div>
         <div class="letter-i">
             <h4><span>I</span></h4>
             <label for="letter-i"></label>
-            <progress class="progress-i" max="50" value="11.65"></progress>
+            <progress max="50" value="11.65"></progress>
             <h4>29 (11.65%)</h4>
         </div>
         <div class="letter-t">
             <h4><span>T</span></h4>
             <label for="letter-t"></label>
-            <progress class="progress-t" max="50" value="11.24"></progress>
+            <progress max="50" value="11.24"></progress>
             <h4>28(11.24%)</h4>
         </div>
-        <div class="progress-o">
+        <div class="letter-o">
             <h4><span>O</span></h4>
             <label for="letter-o"></label>
-            <progress class="letter-o" max="50" value="8.84"></progress>
+            <progress max="50" value="8.84"></progress>
             <h4>22(8.84%)</h4>
         </div>
-        <div class="progress-n">
+        <div class="letter-n">
             <h4><span>N</span></h4>
             <label for="letter-n"></label>
-            <progress class="letter-n" max="50" value="8.43"></progress>
+            <progress max="50" value="8.43"></progress>
             <h4>21(8.43%)</h4>
         </div>
         

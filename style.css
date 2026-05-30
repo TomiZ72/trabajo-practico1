@@ -24,50 +24,82 @@ body{
     align-items: center;
 }
 .main{
-    margin: 0;
-    padding: 0;
     background-color: var(--background-color1);
+    display: flex;
     width: 100%;
-    height: 100vh;
+    flex-direction: column;
+    height: 100%;   
+    margin: 0;
+    padding-left: 10px;
+    
+    
 }
-.nav-bar{
+nav{
     height: 50px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #12131a;
     width: 100%;
+    padding: 10px 20px 10px 20px;
+    position: sticky;
+}
+.nav-bar{
+    display: flex;
+    gap: 10px;
+    align-items: center;
     color: var(--text-color2);
-    padding: 30px 50px 30px 20px;
+
 }
-.switch-btn{
-    align-items: end;
+
+.logo{
+    object-fit: contain;
+    max-width: 40px;
+    max-height: 40px;
 }
+.switch{
+    background-color: var(--background-cards);
+    color: white;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    border-radius: 5px;
+    border-color: var(--color-border);
+}
+.switch:hover{
+    background-color: var(--text-color1);
+    color: var(--background-color1);
+}
+
 .title{
-    font-size: 30px;
+    font-size: 40px;
     color: var(--text-color1);
     text-align: center;
+    padding: 40px 0 40px ;
 }
 .text-area{
     width: 100%;
-    height: 100px;
+    height: 180px;
     resize: none;
-    padding-bottom: 30px;
-    margin: 0;
-    box-sizing: border-box;
+    overflow: hidden;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-color: var(--color-border);
-    border-radius: 5px;
+    border-radius: 12px;
     background-color: var(--background-cards);
     font-family: inherit;
-    font-size: 25px;
+    font-size: 17px;
     color: var(--text-color1);
+    box-sizing: border-box;
+    padding: 15px;
       
 }
 .inputs{
-    padding: 15px;
+    padding: 20px 0 30px 0;
     display: flex;
     justify-content: space-between;
+    flex: 1;
 }
 .cards{
     display: flex;
@@ -109,18 +141,29 @@ body{
 .progress-bar{
     width: 100%;
     color: var(--text-color2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.letter-e{
+.letter-e, .letter-i, .letter-n, .letter-t, .letter-o{
    width: 100%;
    display: flex;
    justify-content: space-between;
    gap: 10px;
+   overflow: hidden;
 }
-.progress-e{
-    width: 80%;
-    
+progress{
+    width: 75%;
+}
 
+.progress-bar progress::-webkit-progress-bar{
+    background-color: var(--color-progressbar);
+}
+
+progress::-webkit-progress-value{
+    background-color: var(--color-progressbar);
+    height: 20px;
 }
 
 
