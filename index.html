@@ -13,79 +13,78 @@
 
 <body>
     <section id="main">
-        <header>
             <nav>
                 <div class="nav-bar">
                     <img src="/assets/img/logo.png" alt="imagen del logo" class="logo">
-                    <h3>Character Counter</h3>
+                    <h3 class="subtitle">Character Counter</h3>
                 </div>
-                <button class="switch">☀</button>
+                <button class="switch"><i class="fa-regular fa-sun"></i></button>
             </nav>    
-        </header> 
             <div class="title">
-               
-                <h2>Analyze your text <br> in real-time.</h2>   
+               <h2>Analyze your text <br> in real-time.</h2>   
             </div>
-        
         <textarea class="text-area" placeholder="Start tipying here...">“Design is the silent ambassador of your brand.
 Simplicity is key to effective communication, creating clarity in every interaction.
 A great design transforms complex ideas into elegant solutions, making them easy to understand.
 It blends aesthetics and functionality seamlessly.</textarea>
             <div class="inputs">
-                <label>
-                    <input type="checkbox" class="inp-1">
+                <div class="checkbox">
+                    <label class="input-box">
+                    <input type="checkbox">
+                    <span class="icon-checked"></span>
                     Exclude Spaces
-                </label>
-                <label>
-                    <input type="checkbox" class="inp-2">
+                    </label>
+                    <label class="input-box">
+                    <input type="checkbox">
+                    <span class="icon-checked"></span>
                     Set character limits
-                </label>
-                <p>Approx. reading time:1 minute</p>
+                    </label>
+                </div>
+                    <p>Approx. reading time:1 minute</p>
             </div>
-            <section class="cards">
+    <section class="cards">
         <div class="card1">
-            <h2>278</h2>
-            <p class="txt-card1">Total Characters</p>
+            <h2 class="value">278</h2>
+            <p>Total Characters</p>
         </div>
-         <div class="card2">
-            <h2>39</h2>
-            <p class="txt-card2">Word Count</p>
-
+        <div class="card2">
+            <h2 class="value">39</h2>
+            <p>Word Count</p>
         </div> 
         <div class="card3">
-            <h2>04</h2>
-            <p class="txt-card3">Sentence Count</p>
+            <h2 class="value">04</h2>
+            <p>Sentence Count</p>
         </div>
     </section>
     <section class="progress-bar">
         <h3>Letter Density</h3>
         <div class="letter-e">
-            <h4><span>E</span></h4>
+            <h4 class="letter">E</h4>
             <label for="letter-e"></label>
             <progress max="50" value="16.06"></progress>
             <h4>40(16.06%)</h4>
         </div>
         <div class="letter-i">
-            <h4><span>I</span></h4>
+            <h4>I</h4>
             <label for="letter-i"></label>
             <progress max="50" value="11.65"></progress>
             <h4>29 (11.65%)</h4>
         </div>
         <div class="letter-t">
-            <h4><span>T</span></h4>
+            <h4>T</h4>
             <label for="letter-t"></label>
             <progress max="50" value="11.24"></progress>
             <h4>28(11.24%)</h4>
         </div>
         <div class="letter-o">
-            <h4><span>O</span></h4>
+            <h4>O</h4>
             <label for="letter-o"></label>
             <progress max="50" value="8.84"></progress>
             <h4>22(8.84%)</h4>
         </div>
         <div class="letter-n">
-            <h4><span>N</span></h4>
-            <label for="letter-n"></label>
+            <h4>N</h4>
+            <label for="letter-n"></label>    
             <progress max="50" value="8.43"></progress>
             <h4>21(8.43%)</h4>
         </div>
