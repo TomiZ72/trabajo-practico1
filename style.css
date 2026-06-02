@@ -28,7 +28,6 @@ body{
     background-color: var(--background-color1);
     display: flex;
     flex-direction: column;
-    height: 100vh;
     max-width: 800px;
     width: 100%;
     height: 100vh;
@@ -68,6 +67,7 @@ nav{
     border-radius: 15px;
     border-color: var(--color-border);
     font-size: 30px;
+    box-shadow: ;
 }
 .switch:hover{
     background-color: var(--text-color1);
@@ -98,17 +98,15 @@ nav{
     color: var(--text-color2);
     padding: 20px 10px 20px 10px;
     margin: 0;
-    
-      
+    box-shadow: 7px 4px 15px 5px rgba(35,37,51,0.91);
 }
+
 .inputs{
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 20px;
     padding: 20px 0 40px 0;
-    width: auto;
     gap: 30px;
     color: var(--text-color1);
     font-weight: lighter;
@@ -136,12 +134,11 @@ nav{
     border: 2px solid #cfcfcf;
     border-radius: 4px;
     position: relative;
-    transition: all 0.2s ease;
 }
 
 .input-box input[type="checkbox"]:checked + .icon-checked {
     background: var(--background-color1);
-    border-color: var(--background-color1);
+    border-color: var(--color-border);
 }
 
 .input-box input[type="checkbox"]:checked + .icon-checked::after {
@@ -177,30 +174,29 @@ nav{
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    font-weight: bold;
-    font-size: 30px;
     padding: 10px 0px 10px 10px;
 }
 .cards .value{ 
-    padding: 5px 0 5px 5px;
+    padding: 5px 0 10px 5px;
     font-size: 60px;
+    font-weight: bold;
 }
 .cards p{
     font-size: 20px;
-    padding: 0px 0 5px 5px;
-    font-weight: lighter;
-    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-weight: light;
 }
 .progress-bar h3{
     color: var(--text-color1);
     padding: 30px 0 0 0;
     font-size: 25px;
+    font-weight: light;
 }
 .progress-bar {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
 }
 .progress-bar h4{
     color: var(--text-color1);
@@ -212,8 +208,6 @@ nav{
    justify-content: space-between;
    overflow: hidden;
    align-items: center;
-   width: 100%;
-   
 }
 progress{
     appearance: none;
@@ -224,22 +218,18 @@ progress{
 }
 .letter progress::-webkit-progress-bar {
     background-color: var(--background-cards);
-    border-radius: 10px;
+    border-radius: 50px;
 }
 .letter progress::-webkit-progress-value {
     background-color: var(--color-progressbar);
     border-radius: 50px;
 }
-
-
 .see-more{
     display: flex;
-    padding-top: 30px;
-    font-size: 15px;
+    padding-top: 40px;
+    font-size: 20px;
     color: var(--text-color2);
-    margin-bottom: 40px;
     font-weight: lighter;
-    width: 100%;
     gap: 5px;
 }
 .btn-more{
@@ -248,6 +238,7 @@ progress{
     border: none;
     cursor: pointer;
 }
+
 
 
 
